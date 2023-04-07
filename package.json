@@ -1,0 +1,46 @@
+{
+  "name": "easyex-example",
+  "version": "1.0.0",
+  "description": "@easyex library implementation example",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js",
+    "lint": "eslint src",
+    "build": "babel source --out-dir dist"
+  },
+  "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@easyex/core": "^0.5.0",
+    "@easyex/mongo": "^0.1.0",
+    "express-form-data": "~2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "~7.21",
+    "@babel/core": "~7.21",
+    "@babel/eslint-parser": "~7.21",
+    "@babel/node": "~7.20",
+    "@babel/plugin-proposal-decorators": "~7.21",
+    "@babel/plugin-transform-runtime": "~7.21",
+    "@babel/preset-env": "~7.21",
+    "@babel/register": "~7.21",
+    "eslint": "~8.26",
+    "eslint-config-prettier": "~8.8",
+    "lint-staged": "~13.2",
+    "nodemon": "~2.0",
+    "prettier": "~2.7"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "engines": {
+    "npm": "8.19.2",
+    "node": "18.12.1"
+  }
+}
