@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "sourceMaps": "inline",
+      "retainLines": true
+    }
+  },
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      // ** Proposals in Stage 3
+      "@babel/plugin-proposal-decorators",
+      {
+        "version": "2023-01"
+      }
+    ]
+    // // ** Proposals already included in ES2022, but for compatibility with proposal decorators they must be added
+    // "@babel/plugin-proposal-class-properties",
+    // "@babel/plugin-proposal-private-methods",
+    // "@babel/plugin-proposal-class-static-block"
+  ]
+}
