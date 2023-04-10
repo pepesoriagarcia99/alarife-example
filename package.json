@@ -8,10 +8,15 @@
     "lint": "eslint src",
     "build": "babel source --out-dir dist"
   },
+  "keywords": [
+    "framework",
+    "backend",
+    "easyex"
+  ],
   "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@easyex/core": "^0.5.1",
+    "@easyex/core": "^1.0.0",
     "@easyex/mongo": "^0.1.0",
     "express-form-data": "~2.0"
   },

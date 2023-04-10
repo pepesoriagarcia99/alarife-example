@@ -8,10 +8,10 @@ import { App } from '@easyex/core';
 class Main {
 
   constructor() {
-    this.server.use(formData.parse({ autoClean : true }));
+    this.app.use(formData.parse({ autoClean : true }));
 
-    this.server.traceLog({ level : ['info'] });
-    this.server.accessLog({ writeFile : true });
+    this.app.traceLog({ level : ['info', 'debug', 'error', 'warn'] });
+    this.app.accessLog({ writeFile : true });
 
     this.$logger.info(`port: ${this.port}`);
     this.$logger.info('ip: ', this.ip);

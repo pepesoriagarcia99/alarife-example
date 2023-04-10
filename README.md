@@ -1,2 +1,2 @@
-# express-core-example
-Express core example
+# Easyex example
+A complete **Easyex** implementation example
