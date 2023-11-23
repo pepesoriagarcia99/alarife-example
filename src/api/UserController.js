@@ -1,8 +1,8 @@
 /* eslint-disable require-jsdoc */
 import { AutoWired, Controller, Get, Use } from '@easyex/core';
 
-import UserService from './user.service';
-import { protect } from '../../middleware/auth.js';
+import UserService from './user/user.service';
+import { protect } from '../middleware/auth.js';
 
 @Controller('/user')
 class UserController {

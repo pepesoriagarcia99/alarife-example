@@ -1,7 +1,7 @@
 {
-  "name": "easyex-example",
-  "version": "1.0.0",
-  "description": "@easyex library implementation example",
+  "name": "alarife-example",
+  "version": "2.0.0",
+  "description": "alarife library implementation example",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/app.js",
@@ -11,27 +11,25 @@
   "keywords": [
     "framework",
     "backend",
-    "easyex"
+    "alarife"
   ],
   "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@easyex/core": "^1.0.0",
-    "@easyex/mongo": "^0.1.0",
-    "express-form-data": "~2.0"
+    "@alarife/core": "~0.2.2"
   },
   "devDependencies": {
-    "@babel/cli": "~7.21",
-    "@babel/core": "~7.21",
-    "@babel/eslint-parser": "~7.21",
-    "@babel/node": "~7.20",
-    "@babel/plugin-proposal-decorators": "~7.21",
-    "@babel/plugin-transform-runtime": "~7.21",
-    "@babel/preset-env": "~7.21",
-    "@babel/register": "~7.21",
+    "@babel/cli": "~7.23",
+    "@babel/core": "~7.23",
+    "@babel/eslint-parser": "~7.22",
+    "@babel/node": "~7.22",
+    "@babel/plugin-proposal-decorators": "7.23.2",
+    "@babel/plugin-transform-runtime": "~7.23",
+    "@babel/preset-env": "~7.23",
     "eslint": "~8.26",
     "eslint-config-prettier": "~8.8",
     "lint-staged": "~13.2",
+    "ncp": "~2.0",
     "nodemon": "~2.0",
     "prettier": "~2.7"
   },

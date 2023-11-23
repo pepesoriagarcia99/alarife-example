@@ -12,5 +12,8 @@
         "strings": true
     },
     "editor.tabSize": 2,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "cSpell.words": [
+        "alarife"
+    ]
 }
