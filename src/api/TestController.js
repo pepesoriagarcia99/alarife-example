@@ -1,13 +1,30 @@
 /* eslint-disable require-jsdoc */
-import { Controller, Get } from '@easyex/core';
+import { AutoWired } from '@alarife/core/decorators';
+import { Controller, Get } from '@alarife/http/decorators';
 
-@Controller('/test')
+import TestService from '../services/TestService.js';
+
+@Controller('/')
 class TestController {
+
+  @AutoWired(TestService) testService;
 
   @Get('/ping')
   ping(req, res) {
-    return res.success(200).json({ message : 'pong' });
+    res.success().json({ date : new Date() });
   }
+
+  @Get('/stress')
+  stress(req, res) {
+    return this.testService.blockingMethod(9000000000)
+      .then(result => {
+        res.success().json(result);
+      })
+      .catch(err => {
+        res.serverError().json(err);
+      });
+  }
+
 }
 
 export default TestController;

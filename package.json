@@ -1,6 +1,6 @@
 {
   "name": "alarife-example",
-  "version": "2.0.0",
+  "version": "0.1.0",
   "description": "alarife library implementation example",
   "main": "src/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@alarife/core": "~0.2.2"
+    "@alarife/http": "0.2.3"
   },
   "devDependencies": {
     "@babel/cli": "~7.23",
